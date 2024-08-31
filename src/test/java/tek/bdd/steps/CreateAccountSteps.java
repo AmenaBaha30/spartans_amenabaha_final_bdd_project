@@ -25,13 +25,13 @@ public class CreateAccountSteps extends SeleniumUtility {
         String prefix = "Jawid";
         String randomEmail = RandomGenerator.randomEmail(prefix);
         sendText(CreateAccountPageObject.EMAIL_INPUT, randomEmail);
-        selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Mr.");
-        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Jawid");
-        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Gulzai");
-        selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
-        selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Married");
+        selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Ms.");
+        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Amena");
+        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Baha");
+        selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Female");
+        selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Single");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2006");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "01/01/2000");
     }
 
     @Then("click on Create Account button")
@@ -59,9 +59,9 @@ public class CreateAccountSteps extends SeleniumUtility {
     }
     @When("when the user fill up sign up form")
     public void whenTheUserFillUpSignUpForm() {
-        sendText(CreateAccountPageObject.USERNAME_INPUT, "Jawid");
-        sendText(CreateAccountPageObject.PASSWORD_INPUT, "Jawid123$");
-        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Jawid123");
+        sendText(CreateAccountPageObject.USERNAME_INPUT, "Amena");
+        sendText(CreateAccountPageObject.PASSWORD_INPUT, "Amena123$");
+        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Amena123");
     }
     @Then("click on submit button")
     public void clickOnSubmitButton() {
@@ -71,14 +71,14 @@ public class CreateAccountSteps extends SeleniumUtility {
     @Then("fill up create account form page")
     public void fillUpCreateAccountFormPage() {
 
-        sendText(CreateAccountPageObject.EMAIL_INPUT, "Jawid422@gmail.com");
-        selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Mr.");
-        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Jawid");
-        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Gulzai");
-        selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
-        selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Married");
+        sendText(CreateAccountPageObject.EMAIL_INPUT, "Amena22@gmail.com");
+        selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Ms.");
+        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Amena");
+        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Baha");
+        selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Female");
+        selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Single");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2000");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "01/01/2000");
     }
     @When("validate account error message")
     public void validateAccountErrorMessage() {
