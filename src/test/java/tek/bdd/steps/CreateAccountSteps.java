@@ -61,7 +61,7 @@ public class CreateAccountSteps extends SeleniumUtility {
     public void whenTheUserFillUpSignUpForm() {
         sendText(CreateAccountPageObject.USERNAME_INPUT, "Amena");
         sendText(CreateAccountPageObject.PASSWORD_INPUT, "Amena90$");
-        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Amena90");
+        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Amena90$");
     }
     @Then("click on submit button")
     public void clickOnSubmitButton() {
