@@ -22,7 +22,7 @@ public class CreateAccountSteps extends SeleniumUtility {
 
     @Then("fill up create account form")
     public void fillUpCreateAccountForm() {
-        String prefix = "Jawid";
+        String prefix = "Amena";
         String randomEmail = RandomGenerator.randomEmail(prefix);
         sendText(CreateAccountPageObject.EMAIL_INPUT, randomEmail);
         selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Ms.");
@@ -60,8 +60,8 @@ public class CreateAccountSteps extends SeleniumUtility {
     @When("when the user fill up sign up form")
     public void whenTheUserFillUpSignUpForm() {
         sendText(CreateAccountPageObject.USERNAME_INPUT, "Amena");
-        sendText(CreateAccountPageObject.PASSWORD_INPUT, "Amena123$");
-        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Amena123");
+        sendText(CreateAccountPageObject.PASSWORD_INPUT, "Amena90$");
+        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Amena90");
     }
     @Then("click on submit button")
     public void clickOnSubmitButton() {
@@ -71,7 +71,7 @@ public class CreateAccountSteps extends SeleniumUtility {
     @Then("fill up create account form page")
     public void fillUpCreateAccountFormPage() {
 
-        sendText(CreateAccountPageObject.EMAIL_INPUT, "Amena22@gmail.com");
+        sendText(CreateAccountPageObject.EMAIL_INPUT, "Amena90@gmail.com");
         selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Ms.");
         sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Amena");
         sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Baha");
